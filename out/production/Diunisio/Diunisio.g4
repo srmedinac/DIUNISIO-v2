@@ -70,11 +70,11 @@ lista_parsv
  : PAREN_AP (expresion | variable | IDENTIFICADOR) (COMA (expresion | variable | IDENTIFICADOR ))* PAREN_CI
  | PAREN_AP PAREN_CI
  ;
+ ;
 
 //Definición de conjunto
 conjunto
  : LLAVEIZ (expresion (COMA expresion)*)? LLAVEDE
- ;
 
 //Identificador de tipo de retorno
 tipo
@@ -241,3 +241,5 @@ CADENA : '"' (~["\r\n] | '""')* '"';
 ESPACIO : [ \t\r\n] -> skip;
 OTRO : .;
 NUEVO : 'NUEVO'
+OBJECTOID : [a-z] [a-zA-Z_0-9]*
+CLASEID : [A-Z] [a-zA-Z_0-9]*

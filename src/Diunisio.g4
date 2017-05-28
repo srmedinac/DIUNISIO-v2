@@ -212,6 +212,12 @@ PARA : 'para';
 DEFECTO : 'defecto';
 IDENTIFICADOR : [a-zA-Z_] [a-zA-Z_0-9]*;
 ENTERO : [0-9]+;
+PUBLICO : 'publico'
+PRIVADO : 'privado'
+PROTEGIDO : 'protegido'
+ESTATICO : 'estatico'
+FINAL : 'final'
+ABSTRACTO : 'abstracto'
 REAL : [0-9]* '.' [0-9]* ([eE] [+-]? [0-9]+)?;
 COMPLEJO : (ENTERO|REAL) [+|-] (ENTERO|REAL)? 'i';
 CADENA : '"' (~["\r\n] | '""')* '"';
