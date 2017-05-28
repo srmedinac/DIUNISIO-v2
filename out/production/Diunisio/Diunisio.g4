@@ -6,7 +6,7 @@ algoritmo
  : ALGORITMO IDENTIFICADOR (PAREN_AP lista_ids PAREN_CI)? DOSPUNTOS bloque TERMINA
  ;
 clase_senten
- : acceso (FINAL | ESTATICO)?  CLASE CLASEID (EXTIENDE CLASEID)? (IMPLEMENTA CLASEID)? bloque
+ : acceso (FINAL | ESTATICO)?  CLASE CLASEID (EXTIENDE CLASEID)? (IMPLEMENTA CLASEID)? bloque_clase
  ;
 interfaz_senten
  : INTERFAZ CLASEID bloque_interfaz
@@ -15,7 +15,18 @@ bloque_interfaz //declaracion bloque interfaz
  : LLAVEIZ LLAVEDE
  | LLAVEIZ metodo_vacio LLAVEDE
  ;
-
+bloque_clase
+ : LLAVEIZ clase_body LLAVEDE
+ | LLAVEIZ LLAVEDE
+ ;
+clase_body
+ : proposicion
+ | objeto
+ | metodo
+ | asignacion_obj
+ | constructor
+ | llamada_metodo
+ ;
 metodo_vacio //metodos para interfaces
  : (acceso modificador tipo IDENTIFICADOR lista_parsv PCOMA)* acceso modificador tipo IDENTIFICADOR lista_parsv PCOMA
  ;
@@ -95,7 +106,7 @@ bloque
  | LLAVEIZ sec_pobjeto LLAVEDE
  ;
 asignacion_obj
- : OBJECTOID PUNTO variable ASIGNAR IDENTIFICADOR PCOMA
+ : OBJETOID PUNTO variable ASIGNAR IDENTIFICADOR PCOMA
  ;
 //secuencia de proposiciones objetos
 sec_pobjeto
@@ -138,21 +149,21 @@ asignacion_esto //asignar this en constructor
 bloque_constructor
  : LLAVEIZ LLAVEDE
  | LLAVEIZ asignacion_esto LLAVEDE
- | LLAVEIZ super LLAVEDE
+ | LLAVEIZ superclase LLAVEDE
  ;
-super
- : SUPER lista_parsv PCOMA
+superclase
+ : SUPERCLASE lista_parsv PCOMA
  ;
 constructor
  : modificador CLASEID lista_parsv bloque_constructor PCOMA
  ;
 //creacion de objetos
 objeto
- : CLASE OBJECTOID ASIGNAR NUEVO CLASEID lista_parsv PCOMA //creacion objeto
+ : CLASE OBJETOID ASIGNAR NUEVO CLASEID lista_parsv PCOMA //creacion objeto
  ;
 llamada_metodo
  : OBJETOID PUNTO IDENTIFICADOR lista_parsv PCOMA //lamada objeto
- | SUPER PUNTO IDENTIFICADOR lista_parsv PCOMA
+ | SUPERCLASE PUNTO IDENTIFICADOR lista_parsv PCOMA
  ;
 
 proposicion_obj
@@ -162,7 +173,9 @@ proposicion_obj
  | asignacion_obj
  | constructor
  | llamada_metodo
-  ;
+ | clase_senten
+ | interfaz_senten
+ ;
 //Modo de asignación
 asignacion
  : IDENTIFICADOR ASIGNAR expresion  #asigNum
@@ -285,12 +298,12 @@ CADENA : '"' (~["\r\n] | '""')* '"';
 ESPACIO : [ \t\r\n] -> skip;
 OTRO : .;
 NUEVO : 'nuevo';//nuewo token
-OBJECTOID : [a-z] [a-zA-Z_0-9]*;//nuewo token
+OBJETOID : [a-z] [a-zA-Z_0-9]*;//nuewo token
 CLASEID : [A-Z] [a-zA-Z_0-9]*;//nuewo token
 PUNTO : '.';//nuewo token
 ESTO : 'esto';//nuewo token
 IMPLEMENTA : 'implementa'; //nuewo token
 EXTIENDE : 'extiende'; //nuewo token
-SUPER : 'super'; //nuewo token
+SUPERCLASE : 'superclase'; //nuewo token
 INTERFAZ: 'interfaz'; //nuevo token
 CLASE: 'clase'; //nuevo token
