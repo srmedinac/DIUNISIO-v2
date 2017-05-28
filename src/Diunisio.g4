@@ -6,7 +6,7 @@ algoritmo
  : ALGORITMO IDENTIFICADOR (PAREN_AP lista_ids PAREN_CI)? DOSPUNTOS bloque TERMINA
  ;
 clase_senten
- : acceso (FINAL | ESTATICO)? CLASEID (EXTIENDE CLASEID)? (IMPLEMENTA CLASEID)? bloque
+ : acceso (FINAL | ESTATICO)?  CLASE CLASEID (EXTIENDE CLASEID)? (IMPLEMENTA CLASEID)? bloque
  ;
 interfaz_senten
  : INTERFAZ CLASEID bloque_interfaz
@@ -293,3 +293,4 @@ IMPLEMENTA : 'implementa'; //nuewo token
 EXTIENDE : 'extiende'; //nuewo token
 SUPER : 'super'; //nuewo token
 INTERFAZ: 'interfaz'; //nuevo token
+CLASE: 'clase'; //nuevo token
