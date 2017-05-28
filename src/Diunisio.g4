@@ -5,7 +5,9 @@ grammar Diunisio;
 algoritmo
  : ALGORITMO IDENTIFICADOR (PAREN_AP lista_ids PAREN_CI)? DOSPUNTOS bloque TERMINA
  ;
-
+clase_senten
+ : CLASEID
+ ;
 //Lista de identificadores
 lista_ids
  : IDENTIFICADOR (COMA IDENTIFICADOR)*
@@ -79,13 +81,20 @@ tipo
 bloque
  : LLAVEIZ LLAVEDE
  | LLAVEIZ sec_proposiciones LLAVEDE
+ | LLAVEIZ sec_pobjeto LLAVEDE
  ;
 
+//secuencia de proposiciones objetos
+sec_pobjeto
+ : (proposicion_obj)* proposicion_obj
+ ;
 //Secuenciación
 sec_proposiciones
  : (proposicion)* proposicion
  ;
-
+acceso //CONTROL DE ACCESO METODOS
+ : PUBLICO | PRIVADO | PROTEGIDO
+ ;
 //Conjunto de posibles sentencias
 proposicion
  : RETORNAR expresion PCOMA
@@ -101,10 +110,26 @@ proposicion
  | LLAVEIZ sec_proposiciones LLAVEDE
  | OTRO {System.err.println("Caracter desconocido: " + $OTRO.text);}
  ;
+ //modificadores metodos
+modificador
+ : ESTATICO | FINAL | ABSTRACTO
+ ;
+
+metodo //creacion metodos
+ : acceso? modificador? tipo IDENTIFICADOR lista_parsv bloque
+;
+
+//creacion de objetos
+objeto
+ : CLASE OBJECTOID ASIGNAR NUEVO CLASEID lista_parsv PCOMA //creacion objeto
+ ;
+
 
 proposicion_obj
-  : proposicion
-  | OBJETOID
+ : proposicion
+ | OBJETOID PUNTO IDENTIFICADOR lista_parsv PCOMA//llamada a metodo de objeto
+ | objeto
+ | metodo
   ;
 //Modo de asignación
 asignacion
@@ -167,7 +192,7 @@ funcion
 //Expresiones regulares para tokens
 COMENTARIO : ('#' ~[\r\n]*  | '/*' .*? '*/') -> skip;
 ALGORITMO : 'ALGORITMO';
-TERMINA : '.';
+TERMINA : '..';
 ENTONCES : 'entonces';
 O : '||';
 Y : '&&';
@@ -230,3 +255,4 @@ OTRO : .;
 NUEVO : 'NUEVO';
 OBJECTOID : [a-z] [a-zA-Z_0-9]*;
 CLASEID : [A-Z] [a-zA-Z_0-9]*;
+PUNTO : '.';

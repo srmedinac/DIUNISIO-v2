@@ -42,11 +42,6 @@ termino
  | factor
  ;
 
-//Definicion de Clase
-
-clase_senten
-: CLASE
-
 //Definición de factor
 factor
  : ENTERO
@@ -70,11 +65,11 @@ lista_parsv
  : PAREN_AP (expresion | variable | IDENTIFICADOR) (COMA (expresion | variable | IDENTIFICADOR ))* PAREN_CI
  | PAREN_AP PAREN_CI
  ;
- ;
 
 //Definición de conjunto
 conjunto
  : LLAVEIZ (expresion (COMA expresion)*)? LLAVEDE
+ ;
 
 //Identificador de tipo de retorno
 tipo
@@ -86,27 +81,10 @@ bloque
  | LLAVEIZ sec_proposiciones LLAVEDE
  ;
 
-
-
 //Secuenciación
 sec_proposiciones
  : (proposicion)* proposicion
  ;
-
-//secuencias orientadas a objetos
-sec_objetos
-    : (sec_proposiciones)*
-    | (prop_objetos)* prop_objetos
-    ;
-
-//proposiciones orientadas a objetos
- prop_objetos
- :
-
-
-
-
-
 
 //Conjunto de posibles sentencias
 proposicion
@@ -124,6 +102,10 @@ proposicion
  | OTRO {System.err.println("Caracter desconocido: " + $OTRO.text);}
  ;
 
+proposicion_obj
+  : proposicion
+  | OBJETOID
+  ;
 //Modo de asignación
 asignacion
  : IDENTIFICADOR ASIGNAR expresion  #asigNum
@@ -185,7 +167,6 @@ funcion
 //Expresiones regulares para tokens
 COMENTARIO : ('#' ~[\r\n]*  | '/*' .*? '*/') -> skip;
 ALGORITMO : 'ALGORITMO';
-CLASE : 'CLASE';
 TERMINA : '.';
 ENTONCES : 'entonces';
 O : '||';
@@ -235,11 +216,17 @@ PARA : 'para';
 DEFECTO : 'defecto';
 IDENTIFICADOR : [a-zA-Z_] [a-zA-Z_0-9]*;
 ENTERO : [0-9]+;
+PUBLICO : 'publico';
+PRIVADO : 'privado';
+PROTEGIDO : 'protegido';
+ESTATICO : 'estatico';
+FINAL : 'final';
+ABSTRACTO : 'abstracto';
 REAL : [0-9]* '.' [0-9]* ([eE] [+-]? [0-9]+)?;
 COMPLEJO : (ENTERO|REAL) [+|-] (ENTERO|REAL)? 'i';
 CADENA : '"' (~["\r\n] | '""')* '"';
 ESPACIO : [ \t\r\n] -> skip;
 OTRO : .;
-NUEVO : 'NUEVO'
-OBJECTOID : [a-z] [a-zA-Z_0-9]*
-CLASEID : [A-Z] [a-zA-Z_0-9]*
+NUEVO : 'NUEVO';
+OBJECTOID : [a-z] [a-zA-Z_0-9]*;
+CLASEID : [A-Z] [a-zA-Z_0-9]*;
