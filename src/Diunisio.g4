@@ -102,6 +102,10 @@ proposicion
  | OTRO {System.err.println("Caracter desconocido: " + $OTRO.text);}
  ;
 
+proposicion_obj
+  : proposicion
+  | OBJETOID
+  ;
 //Modo de asignación
 asignacion
  : IDENTIFICADOR ASIGNAR expresion  #asigNum
@@ -212,14 +216,17 @@ PARA : 'para';
 DEFECTO : 'defecto';
 IDENTIFICADOR : [a-zA-Z_] [a-zA-Z_0-9]*;
 ENTERO : [0-9]+;
-PUBLICO : 'publico'
-PRIVADO : 'privado'
-PROTEGIDO : 'protegido'
-ESTATICO : 'estatico'
-FINAL : 'final'
-ABSTRACTO : 'abstracto'
+PUBLICO : 'publico';
+PRIVADO : 'privado';
+PROTEGIDO : 'protegido';
+ESTATICO : 'estatico';
+FINAL : 'final';
+ABSTRACTO : 'abstracto';
 REAL : [0-9]* '.' [0-9]* ([eE] [+-]? [0-9]+)?;
 COMPLEJO : (ENTERO|REAL) [+|-] (ENTERO|REAL)? 'i';
 CADENA : '"' (~["\r\n] | '""')* '"';
 ESPACIO : [ \t\r\n] -> skip;
 OTRO : .;
+NUEVO : 'NUEVO';
+OBJECTOID : [a-z] [a-zA-Z_0-9]*;
+CLASEID : [A-Z] [a-zA-Z_0-9]*;
