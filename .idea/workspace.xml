@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33759539-c98b-436a-ada4-01d03d7ac8e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Diunisio/Diunisio.g4" afterPath="$PROJECT_DIR$/out/production/Diunisio/Diunisio.g4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Diunisio.g4" afterPath="$PROJECT_DIR$/src/Diunisio.g4" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,8 +51,8 @@
       <file leaf-file-name="Diunisio.g4" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Diunisio.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="145" column="18" lean-forward="true" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
+            <state relative-caret-position="901">
+              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -118,12 +117,14 @@
       <find>factor</find>
       <find>LISTA_IDS</find>
       <find>termina</find>
-      <find>bloque</find>
       <find>sec_</find>
       <find>OBJETO</find>
       <find>OTRO</find>
       <find>TERMINA</find>
       <find>CLASE</find>
+      <find>prop</find>
+      <find>bloque</find>
+      <find>algori</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -633,12 +634,12 @@
       <workItem from="1495998400660" duration="44000" />
       <workItem from="1495998458720" duration="32000" />
       <workItem from="1495998504710" duration="16000" />
-      <workItem from="1495998536476" duration="8114000" />
+      <workItem from="1495998536476" duration="11955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18275000" />
+    <option name="totallyTimeSpent" value="22116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1111,8 +1112,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Diunisio.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="145" column="18" lean-forward="true" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
+        <state relative-caret-position="901">
+          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding />
         </state>
       </provider>

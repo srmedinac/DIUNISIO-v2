@@ -6,7 +6,18 @@ algoritmo
  : ALGORITMO IDENTIFICADOR (PAREN_AP lista_ids PAREN_CI)? DOSPUNTOS bloque TERMINA
  ;
 clase_senten
- : CLASEID
+ : acceso (FINAL | ESTATICO)? CLASEID (EXTIENDE CLASEID)? (IMPLEMENTA CLASEID)? bloque
+ ;
+interfaz_senten
+ : INTERFAZ CLASEID bloque_interfaz
+ ;
+bloque_interfaz //declaracion bloque interfaz
+ : LLAVEIZ LLAVEDE
+ | LLAVEIZ metodo_vacio LLAVEDE
+ ;
+
+metodo_vacio //metodos para interfaces
+ : (acceso modificador tipo IDENTIFICADOR lista_parsv PCOMA)* acceso modificador tipo IDENTIFICADOR lista_parsv PCOMA
  ;
 //Lista de identificadores
 lista_ids
@@ -83,7 +94,9 @@ bloque
  | LLAVEIZ sec_proposiciones LLAVEDE
  | LLAVEIZ sec_pobjeto LLAVEDE
  ;
-
+asignacion_obj
+ : OBJECTOID PUNTO variable ASIGNAR IDENTIFICADOR PCOMA
+ ;
 //secuencia de proposiciones objetos
 sec_pobjeto
  : (proposicion_obj)* proposicion_obj
@@ -119,17 +132,36 @@ metodo //creacion metodos
  : acceso? modificador? tipo IDENTIFICADOR lista_parsv bloque
 ;
 
+asignacion_esto //asignar this en constructor
+ : (ESTO PUNTO IDENTIFICADOR ASIGNAR IDENTIFICADOR PCOMA)*
+ ;
+bloque_constructor
+ : LLAVEIZ LLAVEDE
+ | LLAVEIZ asignacion_esto LLAVEDE
+ | LLAVEIZ super LLAVEDE
+ ;
+super
+ : SUPER lista_parsv PCOMA
+ ;
+constructor
+ : modificador CLASEID lista_parsv bloque_constructor PCOMA
+ ;
 //creacion de objetos
 objeto
  : CLASE OBJECTOID ASIGNAR NUEVO CLASEID lista_parsv PCOMA //creacion objeto
  ;
-
+llamada_metodo
+ : OBJETOID PUNTO IDENTIFICADOR lista_parsv PCOMA //lamada objeto
+ | SUPER PUNTO IDENTIFICADOR lista_parsv PCOMA
+ ;
 
 proposicion_obj
  : proposicion
- | OBJETOID PUNTO IDENTIFICADOR lista_parsv PCOMA//llamada a metodo de objeto
  | objeto
  | metodo
+ | asignacion_obj
+ | constructor
+ | llamada_metodo
   ;
 //Modo de asignación
 asignacion
@@ -241,18 +273,23 @@ PARA : 'para';
 DEFECTO : 'defecto';
 IDENTIFICADOR : [a-zA-Z_] [a-zA-Z_0-9]*;
 ENTERO : [0-9]+;
-PUBLICO : 'publico';
-PRIVADO : 'privado';
-PROTEGIDO : 'protegido';
-ESTATICO : 'estatico';
-FINAL : 'final';
-ABSTRACTO : 'abstracto';
+PUBLICO : 'publico';//nuewo token
+PRIVADO : 'privado';//nuewo token
+PROTEGIDO : 'protegido';//nuewo token
+ESTATICO : 'estatico';//nuewo token
+FINAL : 'final';//nuewo token
+ABSTRACTO : 'abstracto';//nuewo token
 REAL : [0-9]* '.' [0-9]* ([eE] [+-]? [0-9]+)?;
 COMPLEJO : (ENTERO|REAL) [+|-] (ENTERO|REAL)? 'i';
 CADENA : '"' (~["\r\n] | '""')* '"';
 ESPACIO : [ \t\r\n] -> skip;
 OTRO : .;
-NUEVO : 'NUEVO';
-OBJECTOID : [a-z] [a-zA-Z_0-9]*;
-CLASEID : [A-Z] [a-zA-Z_0-9]*;
-PUNTO : '.';
+NUEVO : 'nuevo';//nuewo token
+OBJECTOID : [a-z] [a-zA-Z_0-9]*;//nuewo token
+CLASEID : [A-Z] [a-zA-Z_0-9]*;//nuewo token
+PUNTO : '.';//nuewo token
+ESTO : 'esto';//nuewo token
+IMPLEMENTA : 'implementa'; //nuewo token
+EXTIENDE : 'extiende'; //nuewo token
+SUPER : 'super'; //nuewo token
+INTERFAZ: 'interfaz'; //nuevo token
