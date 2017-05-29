@@ -75,11 +75,23 @@ public class EvalVisitor extends DiunisioBaseVisitor<Valor> {
         return new Valor(null);
     }
 
+    //Visitor de las producciones de la Secuencia de pobjeto
+    @Override
+    public Valor visitSec_pobjeto(DiunisioParser.Sec_pobjetoContext ctx) {
+        for (DiunisioParser.Proposicion_objContext prop_objCtx : ctx.proposicion_obj()) {
+            //tal vez falta mas
+            this.visit(prop_objCtx);
+        }
+        return new Valor(null);
+    }
+
     //Visitor de las producciones de Bloque
     @Override
     public Valor visitBloque(DiunisioParser.BloqueContext ctx) {
         if(ctx.sec_proposiciones() != null)
             return this.visit(ctx.sec_proposiciones());
+        else if(ctx.sec_pobjeto() != null)
+            return this.visit(ctx.sec_pobjeto());
         else
             return new Valor(null);
     }
@@ -419,6 +431,36 @@ public class EvalVisitor extends DiunisioBaseVisitor<Valor> {
         else if (ctx.RETORNAR() != null) {
             retornar = true;
             return this.visit(ctx.expresion());
+        }
+        return this.visit(ctx);
+    }
+
+    //Visitor de las producciones de una Proposición_obj
+    @Override
+    public Valor visitProposicion_obj(DiunisioParser.Proposicion_objContext ctx) {
+        if (ctx.proposicion() != null) {
+            return this.visit(ctx.proposicion());
+        }
+        else if (ctx.objeto() != null) {
+            return this.visit(ctx.objeto());
+        }
+        else if (ctx.metodo() != null) {
+            return this.visit(ctx.metodo());
+        }
+        else if (ctx.asignacion_obj() != null) {
+            return this.visit(ctx.asignacion_obj());
+        }
+        else if (ctx.constructor() != null) {
+            return this.visit(ctx.constructor());
+        }
+        else if (ctx.llamada_metodo() != null) {
+            return this.visit(ctx.llamada_metodo());
+        }
+        else if (ctx.clase_senten() != null) {
+            return this.visit(ctx.clase_senten());
+        }
+        else if (ctx.interfaz_senten() != null) {
+            return this.visit(ctx.interfaz_senten());
         }
         return this.visit(ctx);
     }

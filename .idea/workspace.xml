@@ -3,130 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1da2a52-c7be-4930-b55a-8f659ecdd395" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/'" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Diunisio.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Complejo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Complex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Diunisio.g4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Diunisio.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioBaseListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioBaseVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioLexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioLexer.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$AlgoritmoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$AsigNumContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$AsigVecContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$AsignacionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$BloqueContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Bloque_condicionalContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$CasosContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$CasosDefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$CasosGenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$ConjuntoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Exp_simpleContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$ExpresionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$FactorContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Fun_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$FuncionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Hacer_mientras_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Lista_idsContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Lista_parsvContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Mientras_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Para_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Proc_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$ProposicionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Sec_proposicionesContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Seleccionar_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$Si_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$TerminoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$TipoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser$VariableContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/DiunisioVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Ejemplo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Ejemplo1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Ejemplo2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/EvalVisitor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/EvalVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/FunctionValor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/Valor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/file.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/Diunisio.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioBaseListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioBaseVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioLexer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioLexer.tokens" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/gen/DiunisioVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Diunisio/pruebasRetorno.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/skip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Complejo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Complex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioBaseListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioBaseVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioLexer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$AlgoritmoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$AsigNumContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$AsigVecContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$AsignacionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$BloqueContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Bloque_condicionalContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$CasosContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$CasosDefContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$CasosGenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$ConjuntoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Exp_simpleContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$ExpresionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$FactorContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Fun_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$FuncionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Hacer_mientras_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Lista_idsContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Lista_parsvContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Mientras_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Para_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Proc_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$ProposicionContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Sec_proposicionesContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Seleccionar_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$Si_sentenContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$TerminoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$TipoContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser$VariableContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiunisioVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ejemplo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ejemplo1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ejemplo2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/EvalVisitor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/EvalVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FunctionValor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Valor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/file.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pruebasRetorno.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Complex.java" afterPath="$PROJECT_DIR$/src/Complex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Diunisio.tokens" afterPath="$PROJECT_DIR$/src/Diunisio.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioBaseListener.java" afterPath="$PROJECT_DIR$/src/DiunisioBaseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioBaseVisitor.java" afterPath="$PROJECT_DIR$/src/DiunisioBaseVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioLexer.java" afterPath="$PROJECT_DIR$/src/DiunisioLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioLexer.tokens" afterPath="$PROJECT_DIR$/src/DiunisioLexer.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioListener.java" afterPath="$PROJECT_DIR$/src/DiunisioListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioParser.java" afterPath="$PROJECT_DIR$/src/DiunisioParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DiunisioVisitor.java" afterPath="$PROJECT_DIR$/src/DiunisioVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EvalVisitor.java" afterPath="$PROJECT_DIR$/src/EvalVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FunctionValor.java" afterPath="$PROJECT_DIR$/src/FunctionValor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Valor.java" afterPath="$PROJECT_DIR$/src/Valor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,17 +16,54 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Diunisio.g4" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Diunisio.g4" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Diunisio.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="308" column="29" lean-forward="true" selection-start-line="308" selection-start-column="29" selection-end-line="308" selection-end-column="29" />
+            <state relative-caret-position="337">
+              <caret line="170" column="3" lean-forward="false" selection-start-line="170" selection-start-column="3" selection-end-line="170" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvalVisitor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EvalVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="462" column="51" lean-forward="false" selection-start-line="462" selection-start-column="51" selection-end-line="462" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiunisioBaseVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DiunisioBaseVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="228" column="43" lean-forward="false" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>funcion</find>
+      <find>sec_</find>
+      <find>sec</find>
+      <find>Proposicion</find>
+      <find>sec_pro</find>
+      <find>bloque</find>
+      <find>sec_obj</find>
+      <find>sec_pobj</find>
+      <find>public T visitSec_pobjeto(DiunisioParser.Sec_pobjetoContext ctx)proposicion_obj</find>
+      <find>RETORNAR</find>
+      <find>BloqueContext</find>
+      <find>proposicion_obj</find>
+      <find>proposicion</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,11 +73,17 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/EvalVisitor.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -208,6 +128,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Valor.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -219,7 +143,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,7 +152,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Diunisio_V1.0" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -500,7 +424,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -518,7 +442,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18649046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -578,24 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Valor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Complex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -604,34 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FunctionValor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EvalVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4325">
-          <caret line="432" column="20" lean-forward="false" selection-start-line="432" selection-start-column="20" selection-end-line="432" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DiunisioVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DiunisioBaseVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -660,10 +542,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FunctionValor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Valor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DiunisioBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="228" column="43" lean-forward="false" selection-start-line="228" selection-start-column="28" selection-end-line="228" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DiunisioParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="2797" column="47" lean-forward="false" selection-start-line="2797" selection-start-column="30" selection-end-line="2797" selection-end-column="47" />
+          <folding>
+            <element signature="e#83847#83848#0" expanded="true" />
+            <element signature="e#83905#83906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Diunisio.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="308" column="29" lean-forward="true" selection-start-line="308" selection-start-column="29" selection-end-line="308" selection-end-column="29" />
+        <state relative-caret-position="337">
+          <caret line="170" column="3" lean-forward="false" selection-start-line="170" selection-start-column="3" selection-end-line="170" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EvalVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="462" column="51" lean-forward="false" selection-start-line="462" selection-start-column="51" selection-end-line="462" selection-end-column="51" />
           <folding />
         </state>
       </provider>
