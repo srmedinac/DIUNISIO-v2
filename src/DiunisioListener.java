@@ -1,4 +1,4 @@
-// Generated from C:/Users/melli/Desktop/UNLang/src\Diunisio.g4 by ANTLR 4.7
+// Generated from C:/Users/jedam/IdeaProjects/diuni/src\Diunisio.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -16,6 +16,66 @@ public interface DiunisioListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAlgoritmo(DiunisioParser.AlgoritmoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#clase_senten}.
+	 * @param ctx the parse tree
+	 */
+	void enterClase_senten(DiunisioParser.Clase_sentenContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#clase_senten}.
+	 * @param ctx the parse tree
+	 */
+	void exitClase_senten(DiunisioParser.Clase_sentenContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#interfaz_senten}.
+	 * @param ctx the parse tree
+	 */
+	void enterInterfaz_senten(DiunisioParser.Interfaz_sentenContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#interfaz_senten}.
+	 * @param ctx the parse tree
+	 */
+	void exitInterfaz_senten(DiunisioParser.Interfaz_sentenContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#bloque_interfaz}.
+	 * @param ctx the parse tree
+	 */
+	void enterBloque_interfaz(DiunisioParser.Bloque_interfazContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#bloque_interfaz}.
+	 * @param ctx the parse tree
+	 */
+	void exitBloque_interfaz(DiunisioParser.Bloque_interfazContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#bloque_clase}.
+	 * @param ctx the parse tree
+	 */
+	void enterBloque_clase(DiunisioParser.Bloque_claseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#bloque_clase}.
+	 * @param ctx the parse tree
+	 */
+	void exitBloque_clase(DiunisioParser.Bloque_claseContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#clase_body}.
+	 * @param ctx the parse tree
+	 */
+	void enterClase_body(DiunisioParser.Clase_bodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#clase_body}.
+	 * @param ctx the parse tree
+	 */
+	void exitClase_body(DiunisioParser.Clase_bodyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#metodo_vacio}.
+	 * @param ctx the parse tree
+	 */
+	void enterMetodo_vacio(DiunisioParser.Metodo_vacioContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#metodo_vacio}.
+	 * @param ctx the parse tree
+	 */
+	void exitMetodo_vacio(DiunisioParser.Metodo_vacioContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link DiunisioParser#lista_ids}.
 	 * @param ctx the parse tree
@@ -117,6 +177,26 @@ public interface DiunisioListener extends ParseTreeListener {
 	 */
 	void exitBloque(DiunisioParser.BloqueContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#asignacion_obj}.
+	 * @param ctx the parse tree
+	 */
+	void enterAsignacion_obj(DiunisioParser.Asignacion_objContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#asignacion_obj}.
+	 * @param ctx the parse tree
+	 */
+	void exitAsignacion_obj(DiunisioParser.Asignacion_objContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#sec_pobjeto}.
+	 * @param ctx the parse tree
+	 */
+	void enterSec_pobjeto(DiunisioParser.Sec_pobjetoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#sec_pobjeto}.
+	 * @param ctx the parse tree
+	 */
+	void exitSec_pobjeto(DiunisioParser.Sec_pobjetoContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link DiunisioParser#sec_proposiciones}.
 	 * @param ctx the parse tree
 	 */
@@ -127,6 +207,16 @@ public interface DiunisioListener extends ParseTreeListener {
 	 */
 	void exitSec_proposiciones(DiunisioParser.Sec_proposicionesContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#acceso}.
+	 * @param ctx the parse tree
+	 */
+	void enterAcceso(DiunisioParser.AccesoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#acceso}.
+	 * @param ctx the parse tree
+	 */
+	void exitAcceso(DiunisioParser.AccesoContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link DiunisioParser#proposicion}.
 	 * @param ctx the parse tree
 	 */
@@ -136,6 +226,96 @@ public interface DiunisioListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitProposicion(DiunisioParser.ProposicionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#modificador}.
+	 * @param ctx the parse tree
+	 */
+	void enterModificador(DiunisioParser.ModificadorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#modificador}.
+	 * @param ctx the parse tree
+	 */
+	void exitModificador(DiunisioParser.ModificadorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#metodo}.
+	 * @param ctx the parse tree
+	 */
+	void enterMetodo(DiunisioParser.MetodoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#metodo}.
+	 * @param ctx the parse tree
+	 */
+	void exitMetodo(DiunisioParser.MetodoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#asignacion_esto}.
+	 * @param ctx the parse tree
+	 */
+	void enterAsignacion_esto(DiunisioParser.Asignacion_estoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#asignacion_esto}.
+	 * @param ctx the parse tree
+	 */
+	void exitAsignacion_esto(DiunisioParser.Asignacion_estoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#bloque_constructor}.
+	 * @param ctx the parse tree
+	 */
+	void enterBloque_constructor(DiunisioParser.Bloque_constructorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#bloque_constructor}.
+	 * @param ctx the parse tree
+	 */
+	void exitBloque_constructor(DiunisioParser.Bloque_constructorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#superclase}.
+	 * @param ctx the parse tree
+	 */
+	void enterSuperclase(DiunisioParser.SuperclaseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#superclase}.
+	 * @param ctx the parse tree
+	 */
+	void exitSuperclase(DiunisioParser.SuperclaseContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#constructor}.
+	 * @param ctx the parse tree
+	 */
+	void enterConstructor(DiunisioParser.ConstructorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#constructor}.
+	 * @param ctx the parse tree
+	 */
+	void exitConstructor(DiunisioParser.ConstructorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#objeto}.
+	 * @param ctx the parse tree
+	 */
+	void enterObjeto(DiunisioParser.ObjetoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#objeto}.
+	 * @param ctx the parse tree
+	 */
+	void exitObjeto(DiunisioParser.ObjetoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#llamada_metodo}.
+	 * @param ctx the parse tree
+	 */
+	void enterLlamada_metodo(DiunisioParser.Llamada_metodoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#llamada_metodo}.
+	 * @param ctx the parse tree
+	 */
+	void exitLlamada_metodo(DiunisioParser.Llamada_metodoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DiunisioParser#proposicion_obj}.
+	 * @param ctx the parse tree
+	 */
+	void enterProposicion_obj(DiunisioParser.Proposicion_objContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DiunisioParser#proposicion_obj}.
+	 * @param ctx the parse tree
+	 */
+	void exitProposicion_obj(DiunisioParser.Proposicion_objContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code asigNum}
 	 * labeled alternative in {@link DiunisioParser#asignacion}.

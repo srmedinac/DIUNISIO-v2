@@ -1,4 +1,4 @@
-// Generated from C:/Users/smedi/Desktop/Diunisio_V1.0/Diunisio/out/production/Diunisio\Diunisio.g4 by ANTLR 4.7
+// Generated from C:/Users/jedam/IdeaProjects/diuni/src\Diunisio.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

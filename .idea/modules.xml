@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Diunisio.iml" filepath="$PROJECT_DIR$/Diunisio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diuni.iml" filepath="$PROJECT_DIR$/diuni.iml" />
     </modules>
   </component>
 </project>

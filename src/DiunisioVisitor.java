@@ -1,4 +1,4 @@
-// Generated from C:/Users/melli/Desktop/UNLang/src\Diunisio.g4 by ANTLR 4.7
+// Generated from C:/Users/jedam/IdeaProjects/diuni/src\Diunisio.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -15,6 +15,42 @@ public interface DiunisioVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitAlgoritmo(DiunisioParser.AlgoritmoContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#clase_senten}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitClase_senten(DiunisioParser.Clase_sentenContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#interfaz_senten}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInterfaz_senten(DiunisioParser.Interfaz_sentenContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#bloque_interfaz}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBloque_interfaz(DiunisioParser.Bloque_interfazContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#bloque_clase}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBloque_clase(DiunisioParser.Bloque_claseContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#clase_body}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitClase_body(DiunisioParser.Clase_bodyContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#metodo_vacio}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMetodo_vacio(DiunisioParser.Metodo_vacioContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link DiunisioParser#lista_ids}.
 	 * @param ctx the parse tree
@@ -76,17 +112,89 @@ public interface DiunisioVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBloque(DiunisioParser.BloqueContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#asignacion_obj}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAsignacion_obj(DiunisioParser.Asignacion_objContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#sec_pobjeto}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSec_pobjeto(DiunisioParser.Sec_pobjetoContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link DiunisioParser#sec_proposiciones}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitSec_proposiciones(DiunisioParser.Sec_proposicionesContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#acceso}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAcceso(DiunisioParser.AccesoContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link DiunisioParser#proposicion}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitProposicion(DiunisioParser.ProposicionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#modificador}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitModificador(DiunisioParser.ModificadorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#metodo}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMetodo(DiunisioParser.MetodoContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#asignacion_esto}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAsignacion_esto(DiunisioParser.Asignacion_estoContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#bloque_constructor}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBloque_constructor(DiunisioParser.Bloque_constructorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#superclase}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSuperclase(DiunisioParser.SuperclaseContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#constructor}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitConstructor(DiunisioParser.ConstructorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#objeto}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitObjeto(DiunisioParser.ObjetoContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#llamada_metodo}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLlamada_metodo(DiunisioParser.Llamada_metodoContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link DiunisioParser#proposicion_obj}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitProposicion_obj(DiunisioParser.Proposicion_objContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code asigNum}
 	 * labeled alternative in {@link DiunisioParser#asignacion}.
