@@ -1,4 +1,4 @@
-// Generated from C:/Users/jedam/IdeaProjects/diuni/src\Diunisio.g4 by ANTLR 4.7
+// Generated from D:/Documents/2017-1/Lenguajes/DIUNISIO-v2/src\Diunisio.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -2624,11 +2624,13 @@ public class DiunisioParser extends Parser {
 	}
 
 	public static class ObjetoContext extends ParserRuleContext {
-		public TerminalNode CLASE() { return getToken(DiunisioParser.CLASE, 0); }
+		public List<TerminalNode> CLASEID() { return getTokens(DiunisioParser.CLASEID); }
+		public TerminalNode CLASEID(int i) {
+			return getToken(DiunisioParser.CLASEID, i);
+		}
 		public TerminalNode OBJETOID() { return getToken(DiunisioParser.OBJETOID, 0); }
 		public TerminalNode ASIGNAR() { return getToken(DiunisioParser.ASIGNAR, 0); }
 		public TerminalNode NUEVO() { return getToken(DiunisioParser.NUEVO, 0); }
-		public TerminalNode CLASEID() { return getToken(DiunisioParser.CLASEID, 0); }
 		public Lista_parsvContext lista_parsv() {
 			return getRuleContext(Lista_parsvContext.class,0);
 		}
@@ -2659,7 +2661,7 @@ public class DiunisioParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(404);
-			match(CLASE);
+			match(CLASEID);
 			setState(405);
 			match(OBJETOID);
 			setState(406);
@@ -3938,7 +3940,7 @@ public class DiunisioParser extends Parser {
 		"\65\3\2\2\2\u018c\u018d\7H\2\2\u018d\u018e\5\34\17\2\u018e\u018f\7\36"+
 		"\2\2\u018f\67\3\2\2\2\u0190\u0191\5.\30\2\u0191\u0192\7C\2\2\u0192\u0193"+
 		"\5\34\17\2\u0193\u0194\5\64\33\2\u0194\u0195\7\36\2\2\u01959\3\2\2\2\u0196"+
-		"\u0197\7J\2\2\u0197\u0198\7B\2\2\u0198\u0199\7\37\2\2\u0199\u019a\7A\2"+
+		"\u0197\7C\2\2\u0197\u0198\7B\2\2\u0198\u0199\7\37\2\2\u0199\u019a\7A\2"+
 		"\2\u019a\u019b\7C\2\2\u019b\u019c\5\34\17\2\u019c\u019d\7\36\2\2\u019d"+
 		";\3\2\2\2\u019e\u019f\7B\2\2\u019f\u01a0\7D\2\2\u01a0\u01a1\7\64\2\2\u01a1"+
 		"\u01a2\5\34\17\2\u01a2\u01a3\7\36\2\2\u01a3\u01ab\3\2\2\2\u01a4\u01a5"+

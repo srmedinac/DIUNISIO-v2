@@ -465,6 +465,24 @@ public class EvalVisitor extends DiunisioBaseVisitor<Valor> {
         return this.visit(ctx);
     }
 
+    //Visitor de las producciones de un objeto
+    @Override
+    public Valor visitObjeto(DiunisioParser.ObjetoContext ctx){
+        FunctionValor funcion = new FunctionValor(null);
+        funcion.tipo="objeto";
+        HashMap<String, Valor> mem = globales;
+        // falta nombre de clase
+        if (ctx.CLASEID() != null) {
+            System.out.println(this.visit(ctx.lista_parsv()));
+            return new Valor(null);
+        }
+        //objeto
+        mem.put(ctx.OBJETOID().getText(),funcion);
+        System.out.println(this.visit(ctx.lista_parsv()));
+        // falta
+        return new Valor (null);
+    }
+
     //Visitor de las producciones de una definición de un Procedimiento
     @Override
     public Valor visitProc_senten(DiunisioParser.Proc_sentenContext ctx) {
