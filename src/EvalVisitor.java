@@ -84,6 +84,38 @@ public class EvalVisitor extends DiunisioBaseVisitor<Valor> {
         }
         return new Valor(null);
     }
+    //Visitor de las producciones de clase senten
+    @Override
+    public Valor visitClase_senten(DiunisioParser.Clase_sentenContext ctx){
+        FunctionValor clase = new FunctionValor(null);
+        HashMap<String, Valor> memoria =globales;
+        memoria.put(ctx.acceso().getText(),clase);
+        return new Valor(null);
+    }
+
+    //Visitor de las producciones de clase_body
+    @Override
+    public Valor visitClase_body(DiunisioParser.Clase_bodyContext ctx) {
+        if (ctx.proposicion() != null) {
+            return this.visit(ctx.proposicion());
+        }
+        else if (ctx.objeto() != null) {
+            return this.visit(ctx.objeto());
+        }
+        else if (ctx.metodo() != null) {
+            return this.visit(ctx.metodo());
+        }
+        else if (ctx.asignacion_obj() != null) {
+            return this.visit(ctx.asignacion_obj());
+        }
+        else if (ctx.constructor() != null) {
+            return this.visit(ctx.constructor());
+        }
+        else if (ctx.llamada_metodo() != null) {
+            return this.visit(ctx.llamada_metodo());
+        }
+        return this.visit(ctx);
+    }
 
     //Visitor de las producciones de Bloque
     @Override
@@ -469,18 +501,16 @@ public class EvalVisitor extends DiunisioBaseVisitor<Valor> {
     @Override
     public Valor visitObjeto(DiunisioParser.ObjetoContext ctx){
         FunctionValor funcion = new FunctionValor(null);
-        funcion.tipo="objeto";
-        HashMap<String, Valor> mem = globales;
-        // falta nombre de clase
-        if (ctx.CLASEID() != null) {
-            System.out.println(this.visit(ctx.lista_parsv()));
-            return new Valor(null);
+        funcion.tipo = "Objeto";
+        //System.out.print(ctx.CLASEID().toString());
+        for (int i = 0; i < ctx.lista_parsv().IDENTIFICADOR().size(); i++) {
+            funcion.parametros.add(ctx.lista_parsv().IDENTIFICADOR(i).getText());
         }
-        //objeto
-        mem.put(ctx.OBJETOID().getText(),funcion);
-        System.out.println(this.visit(ctx.lista_parsv()));
-        // falta
-        return new Valor (null);
+        HashMap<String, Valor> memoria = globales;
+        memoria.put(ctx.CLASEID().toString(),funcion);
+        memoria.put(ctx.OBJETOID().getText(), funcion);
+
+        return new Valor(null);
     }
 
     //Visitor de las producciones de una definición de un Procedimiento
