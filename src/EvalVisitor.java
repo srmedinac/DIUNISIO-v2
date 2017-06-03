@@ -120,16 +120,20 @@ public class EvalVisitor extends DiunisioBaseVisitor<Valor> {
     //Visitor de las producciones de Bloque
     @Override
     public Valor visitBloque(DiunisioParser.BloqueContext ctx) {
-        if(ctx.sec_proposiciones() != null)
-            return this.visit(ctx.sec_proposiciones());
-        else if(ctx.sec_pobjeto() != null)
+        if(ctx.sec_pobjeto() != null) {
+            System.out.println("pojeto");
+            System.out.println(ctx.sec_pobjeto());
             return this.visit(ctx.sec_pobjeto());
+        }
+        else if(ctx.sec_proposiciones() != null)
+            return this.visit(ctx.sec_proposiciones());
         else
             return new Valor(null);
     }
 
     //Visitor de las producciones del Bloque de la Función
     private Valor visitBloqFun(DiunisioParser.BloqueContext ctx) {
+        System.out.println(ctx);
         for(DiunisioParser.ProposicionContext propCtx : ctx.sec_proposiciones().proposicion()){
             //Retorna si encuentra la sentencia RETORNAR
             if(propCtx.RETORNAR() != null) {
